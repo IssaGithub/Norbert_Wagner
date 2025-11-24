@@ -1,0 +1,71 @@
+---
+const leistungen = [
+  {
+    title: "Baufinanzierung",
+    description: "Ob Kauf oder Neubau von Wohneigentum. Auf deinem Weg ins Eigenheim kümmere ich mich um alles Nötige rund um dein persönliches Vorhaben von der Planung bis zur letzten Rate.",
+    features: [
+      "Annuitätendarlehen",
+      "KfW-Förderkredit",
+      "Anschlussfinanzierung",
+      "Forward-Darlehen",
+      "Auch 1% Tilgung möglich",
+      "Finanzierung ohne Eigenkapital möglich"
+    ],
+    icon: "🏠"
+  },
+  {
+    title: "Ratenkredit",
+    description: "Für größere Anschaffungen oder Umschuldungen biete ich dir maßgeschneiderte Ratenkreditlösungen mit optimalen Konditionen.",
+    features: [
+      "Modernisierungskredit",
+      "Autokredit",
+      "Privatkredit",
+      "Umschuldung bestehender Kredite"
+    ],
+    icon: "💳"
+  },
+  {
+    title: "Beratung & Service",
+    description: "Ich nehme mir Zeit für deine individuelle Situation und betreue dich auch über die Vertragsanbahnung hinaus.",
+    features: [
+      "Unabhängige Beratung",
+      "Ganzheitlicher Ansatz",
+      "Kostenfreie Beratung",
+      "Beratung vor Ort oder digital"
+    ],
+    icon: "🤝"
+  }
+];
+---
+
+<section id="leistungen" class="py-16 md:py-24 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <p class="text-primary-600 font-semibold mb-2">Dein "Rundum-sorglos-Paket"</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        Mein Leistungsangebot
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      {leistungen.map((leistung) => (
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-1">
+          <div class="text-5xl mb-4">{leistung.icon}</div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">{leistung.title}</h3>
+          <p class="text-gray-600 mb-6 leading-relaxed">{leistung.description}</p>
+          <ul class="space-y-2">
+            {leistung.features.map((feature) => (
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-gray-700">{feature}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+

@@ -1,0 +1,71 @@
+---
+const vorteile = [
+  {
+    title: "Zeitersparnis",
+    description: "Du musst nicht zu verschiedenen Banken gehen",
+    icon: "⏱️"
+  },
+  {
+    title: "Bequem",
+    description: "Ich kümmere mich um alles",
+    icon: "🛋️"
+  },
+  {
+    title: "Schnell",
+    description: "Wir können schnell zu einer Finanzierung kommen",
+    icon: "⚡"
+  },
+  {
+    title: "Expertise",
+    description: "Ich weiß, was ich tue",
+    icon: "🎓"
+  },
+  {
+    title: "Kompetenz",
+    description: "Jahrelange einschlägige Erfahrung",
+    icon: "⭐"
+  },
+  {
+    title: "Unabhängig",
+    description: "100% unabhängige Beratung",
+    icon: "🔓"
+  },
+  {
+    title: "Ganzheitlich",
+    description: "Ganzheitlicher Ansatz für deine Situation",
+    icon: "🎯"
+  },
+  {
+    title: "Langfristig",
+    description: "Betreuung auch über die Vertragsanbahnung hinaus",
+    icon: "🤝"
+  },
+  {
+    title: "Über 460 Partner",
+    description: "Auswahl aus über 460 Finanzierungspartnern",
+    icon: "🏦"
+  }
+];
+---
+
+<section id="vorteile" class="py-16 md:py-24 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <p class="text-primary-600 font-semibold mb-2">Individuell auf dich zugeschnitten</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        Alle Vorteile auf einen Blick
+      </h2>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {vorteile.map((vorteil) => (
+        <div class="bg-gradient-to-br from-primary-50 to-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow">
+          <div class="text-4xl mb-3">{vorteil.icon}</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2">{vorteil.title}</h3>
+          <p class="text-gray-600">{vorteil.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+

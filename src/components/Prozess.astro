@@ -1,0 +1,57 @@
+---
+const schritte = [
+  {
+    nummer: "01",
+    title: "Unverbindlich anfragen",
+    description: "Direkt über das Kontaktformular unverbindlich und kostenfrei anfragen. Ich melde mich dann innerhalb von 24 h bei dir."
+  },
+  {
+    nummer: "02",
+    title: "Angebot besprechen",
+    description: "Nach erfolgreicher Terminabstimmung besprechen wir gerne digital per Videokonferenz oder live in gemütlicher Atmosphäre deine individuellen Finanzierungsangebote."
+  },
+  {
+    nummer: "03",
+    title: "Unkompliziert abschließen",
+    description: "Und ohne Extrakosten für dich"
+  }
+];
+---
+
+<section class="py-16 md:py-24 bg-gradient-to-br from-primary-50 to-white">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <p class="text-primary-600 font-semibold mb-2">In nur drei Schritten</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        Dein Weg zum persönlichen Finanzierungsangebot
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      {schritte.map((schritt, index) => (
+        <div class="relative">
+          <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all">
+            <div class="text-6xl font-bold text-primary-200 mb-4">{schritt.nummer}</div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">{schritt.title}</h3>
+            <p class="text-gray-600 leading-relaxed">{schritt.description}</p>
+          </div>
+          {index < 2 && (
+            <div class="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2">
+              <svg class="w-8 h-8 text-primary-300" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+
+    <div class="text-center mt-12">
+      <a href="#kontakt" 
+         class="inline-block bg-primary-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary-700 transition-colors">
+        Angebot einholen
+      </a>
+    </div>
+  </div>
+</section>
+
