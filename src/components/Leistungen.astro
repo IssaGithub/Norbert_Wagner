@@ -11,7 +11,7 @@ const leistungen = [
       "Auch 1% Tilgung möglich",
       "Finanzierung ohne Eigenkapital möglich"
     ],
-    icon: "🏠"
+    icon: "fa-solid fa-house"
   },
   {
     title: "Ratenkredit",
@@ -22,7 +22,7 @@ const leistungen = [
       "Privatkredit",
       "Umschuldung bestehender Kredite"
     ],
-    icon: "💳"
+    icon: "fa-solid fa-credit-card"
   },
   {
     title: "Beratung & Service",
@@ -33,7 +33,7 @@ const leistungen = [
       "Kostenfreie Beratung",
       "Beratung vor Ort oder digital"
     ],
-    icon: "🤝"
+    icon: "fa-solid fa-headphones"
   }
 ];
 ---
@@ -50,15 +50,13 @@ const leistungen = [
     <div class="grid md:grid-cols-3 gap-8">
       {leistungen.map((leistung) => (
         <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-1">
-          <div class="text-5xl mb-4">{leistung.icon}</div>
+          <i class={`${leistung.icon} text-6xl text-primary-600 mb-4 block`}></i>
           <h3 class="text-2xl font-bold text-gray-900 mb-4">{leistung.title}</h3>
           <p class="text-gray-600 mb-6 leading-relaxed">{leistung.description}</p>
           <ul class="space-y-2">
             {leistung.features.map((feature) => (
               <li class="flex items-start">
-                <svg class="w-5 h-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
+                <i class="fa-solid fa-circle-check text-primary-600 mr-2 mt-0.5 flex-shrink-0"></i>
                 <span class="text-gray-700">{feature}</span>
               </li>
             ))}
