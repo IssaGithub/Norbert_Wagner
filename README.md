@@ -1,70 +1,43 @@
-# nowa-finanzen - Norbert Wagner
+# Astro Starter Kit: Minimal
 
-Eine moderne, responsive Onepager-Website für Norbert Wagner, Spezialist für Baufinanzierungen und Ratenkredite.
-
-## 🚀 Technologie-Stack
-
-- **Astro.js** - Modernes Web-Framework
-- **TailwindCSS** - Utility-First CSS Framework
-- **TypeScript** - Type-sicheres JavaScript
-
-## 📋 Features
-
-- ✅ Responsive Design für alle Geräte
-- ✅ Moderne, ansprechende UI basierend auf ms-baufinanzierung.de
-- ✅ Hero-Sektion mit Call-to-Action
-- ✅ Vorteile-Übersicht
-- ✅ Detaillierte Leistungsdarstellung
-- ✅ Über-mich-Sektion
-- ✅ 3-Schritte-Prozess
-- ✅ Kontaktformular
-- ✅ Smooth Scrolling Navigation
-- ✅ Mobile-optimierte Navigation
-
-## 🛠️ Installation
-
-```bash
-# Dependencies installieren
-npm install
-
-# Development Server starten
-npm run dev
-
-# Production Build erstellen
-npm run build
-
-# Production Preview
-npm run preview
+```sh
+npm create astro@latest -- --template minimal
 ```
 
-## 📱 Kontaktdaten
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-**Norbert Wagner**  
-Bankfachwirt (IHK)
+## 🚀 Project Structure
 
-Steigle 4  
-74182 Obersulm
+Inside of your Astro project, you'll see the following folders and files:
 
-Tel.: +49 170 20 888 51  
-Tel.: +49 7130 40 510 15
+```text
+/
+├── public/
+├── src/
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
 
-E-Mail: norbert.wagner@nowa-finanzen.de
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-## 🎨 Anpassungen
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-### Farben
+Any static assets, like images, can be placed in the `public/` directory.
 
-Die Farbpalette kann in `tailwind.config.mjs` angepasst werden.
+## 🧞 Commands
 
-### Inhalte
+All commands are run from the root of the project, from a terminal:
 
-Alle Inhalte befinden sich in den Astro-Komponenten im `src/components/` Verzeichnis.
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-### Bilder
+## 👀 Want to learn more?
 
-Platzieren Sie Ihre Bilder im `public/` Verzeichnis und ersetzen Sie die Platzhalter in den Komponenten.
-
-## 📄 Lizenz
-
-Alle Rechte vorbehalten © 2025 nowa-finanzen
-
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
