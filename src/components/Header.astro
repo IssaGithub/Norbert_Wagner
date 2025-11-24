@@ -2,35 +2,46 @@
 ---
 
 <header class="fixed top-0 w-full bg-white shadow-md z-50">
-  <nav class="container mx-auto px-4 py-3">
-    <div class="flex items-center justify-between">
-      <a href="#home" class="flex items-center">
-        <img src="/Logo_Norbert_wagner.png" alt="nowa-finanzen Logo" class="h-12 md:h-16 w-auto" />
+  <nav class="container mx-auto px-4 py-4">
+    <div class="flex items-center justify-between gap-8">
+      <!-- Logo -->
+      <a href="#home" class="flex items-center flex-shrink-0">
+        <img src="/Logo_Norbert_wagner.png" alt="nowa-finanzen Logo" class="h-10 md:h-14 w-auto" />
       </a>
       
       <!-- Desktop Navigation -->
-      <ul class="hidden md:flex space-x-8">
-        <li><a href="#home" class="text-gray-600 hover:text-primary-600 transition-colors">Startseite</a></li>
-        <li><a href="#leistungen" class="text-gray-600 hover:text-primary-600 transition-colors">Leistungen</a></li>
-        <li><a href="#vorteile" class="text-gray-600 hover:text-primary-600 transition-colors">Vorteile</a></li>
-        <li><a href="#ueber-mich" class="text-gray-600 hover:text-primary-600 transition-colors">Über mich</a></li>
-        <li><a href="#kontakt" class="text-gray-600 hover:text-primary-600 transition-colors">Kontakt</a></li>
+      <ul class="hidden lg:flex items-center space-x-6 xl:space-x-8 flex-grow justify-center">
+        <li><a href="#home" class="text-gray-700 hover:text-primary-600 transition-colors font-medium uppercase text-sm tracking-wide">Startseite</a></li>
+        <li><a href="#leistungen" class="text-gray-700 hover:text-primary-600 transition-colors font-medium uppercase text-sm tracking-wide">Leistungen</a></li>
+        <li><a href="#vorteile" class="text-gray-700 hover:text-primary-600 transition-colors font-medium uppercase text-sm tracking-wide">Vorteile</a></li>
+        <li><a href="#ueber-mich" class="text-gray-700 hover:text-primary-600 transition-colors font-medium uppercase text-sm tracking-wide">Über mich</a></li>
+        <li><a href="#kontakt" class="text-gray-700 hover:text-primary-600 transition-colors font-medium uppercase text-sm tracking-wide">Kontakt</a></li>
       </ul>
 
+      <!-- CTA Button (Desktop) -->
+      <a href="#kontakt" class="hidden lg:flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded font-bold uppercase text-sm tracking-wide transition-colors whitespace-nowrap">
+        <i class="fa-solid fa-phone"></i>
+        <span>Termin buchen</span>
+      </a>
+
       <!-- Mobile Menu Button -->
-      <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-primary-600 text-2xl" aria-label="Menu">
+      <button id="mobile-menu-button" class="lg:hidden text-gray-600 hover:text-primary-600 text-2xl" aria-label="Menu">
         <i class="fa-solid fa-bars"></i>
       </button>
     </div>
 
     <!-- Mobile Navigation -->
-    <ul id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
-      <li><a href="#home" class="block py-2 text-gray-600 hover:text-primary-600 transition-colors">Startseite</a></li>
-      <li><a href="#leistungen" class="block py-2 text-gray-600 hover:text-primary-600 transition-colors">Leistungen</a></li>
-      <li><a href="#vorteile" class="block py-2 text-gray-600 hover:text-primary-600 transition-colors">Vorteile</a></li>
-      <li><a href="#ueber-mich" class="block py-2 text-gray-600 hover:text-primary-600 transition-colors">Über mich</a></li>
-      <li><a href="#kontakt" class="block py-2 text-gray-600 hover:text-primary-600 transition-colors">Kontakt</a></li>
-    </ul>
+    <div id="mobile-menu" class="hidden lg:hidden mt-4 space-y-2">
+      <a href="#home" class="block py-2 text-gray-700 hover:text-primary-600 transition-colors font-medium uppercase text-sm">Startseite</a>
+      <a href="#leistungen" class="block py-2 text-gray-700 hover:text-primary-600 transition-colors font-medium uppercase text-sm">Leistungen</a>
+      <a href="#vorteile" class="block py-2 text-gray-700 hover:text-primary-600 transition-colors font-medium uppercase text-sm">Vorteile</a>
+      <a href="#ueber-mich" class="block py-2 text-gray-700 hover:text-primary-600 transition-colors font-medium uppercase text-sm">Über mich</a>
+      <a href="#kontakt" class="block py-2 text-gray-700 hover:text-primary-600 transition-colors font-medium uppercase text-sm">Kontakt</a>
+      <a href="#kontakt" class="flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded font-bold uppercase text-sm tracking-wide transition-colors mt-4">
+        <i class="fa-solid fa-phone"></i>
+        <span>Termin buchen</span>
+      </a>
+    </div>
   </nav>
 </header>
 
